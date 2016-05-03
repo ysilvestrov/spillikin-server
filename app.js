@@ -60,7 +60,7 @@ app.use(function(err, req, res, next) {
 
 var mongoose = require('mongoose');
 
-var uristring = 'mongodb://localhost/test';
+var uristring = process.env.MONGOURI;
 
 // Makes connection asynchronously. Mongoose will queue up database
 // operations and release them when the connection is complete.
@@ -106,7 +106,7 @@ app.post('/oauth/authorize', function(req, res) {
 
 // Get login.
 app.get('/login', function(req) {
-  return render('login', {
+  return res.render('login', {
     redirect: req.query.redirect,
     client_id: req.query.client_id,
     redirect_uri: req.query.redirect_uri
