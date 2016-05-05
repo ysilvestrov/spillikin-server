@@ -2,7 +2,9 @@
   <configuration default="false" name="bin\www" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" path-to-js-file="bin/www" working-dir="$PROJECT_DIR$">
     <envs>
       <env name="DEBUG" value="server:*" />
-      <env name="MONGOURI" value="mongodb://spillikin:spillikinPwd@ds019468.mlab.com:19468/spillikin" />
+      <env name="mongoose:uri1" value="mongodb://spillikin:spillikinPwd@ds019468.mlab.com:19468/spillikin" />
+      <env name="port" value="3000" />
+      <env name="" value="" />
     </envs>
     <browser url="http://localhost:3000/" />
     <method />
