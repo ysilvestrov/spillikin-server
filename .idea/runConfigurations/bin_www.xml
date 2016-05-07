@@ -3,7 +3,7 @@
     <envs>
       <env name="DEBUG" value="server:*" />
       <env name="mongoose:uri1" value="mongodb://spillikin:spillikinPwd@ds019468.mlab.com:19468/spillikin" />
-      <env name="port" value="3000" />
+      <env name="PORT" value="3000" />
       <env name="" value="" />
     </envs>
     <browser url="http://localhost:3000/" />

@@ -1,5 +1,5 @@
 {
-    "port": 1337,
+    "PORT": 1337,
     "mongoose": {
         "uri": "mongodb://localhost:27017/spillikin",
         "secret": "TheSecretSpillikin"
